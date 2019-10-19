@@ -8,6 +8,9 @@
 #include "IMessageContext.h"
 #include "Interfaces/IPv4/IPv4Endpoint.h"
 
+//enable logging step 1
+DECLARE_LOG_CATEGORY_EXTERN(ModuleLog, Log, All)
+
 class FRunnableThread;
 class FSocket;
 class ILiveLinkClient;

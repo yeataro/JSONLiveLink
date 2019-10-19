@@ -2,8 +2,8 @@
 	"FileVersion": 3,
 	"Version": 1,
 	"VersionName": "1.0",
-	"FriendlyName": "JSONLiveLink",
-	"Description": "LiveLink Source for receiving JSON over sockets",
+	"FriendlyName": "JSONLiveLinkEnhanced",
+	"Description": "Enhanced LiveLink Source for receiving JSON over sockets",
 	"Category": "Animation",
 	"CreatedBy": "Epic Games, Inc.",
 	"CreatedByURL": "https://www.epicgames.com",
@@ -15,7 +15,7 @@
 	"Installed": false,
 	"Modules": [
     {
-      "Name": "JSONLiveLink",
+      "Name": "JSONLiveLinkEnhanced",
       "Type": "Runtime",
       "LoadingPhase": "Default"
     }
