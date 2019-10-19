@@ -15,7 +15,7 @@
 	"Installed": false,
 	"Modules": [
     {
-      "Name": "JSONLiveLinkEnhanced",
+      "Name": "JSONLiveLink",
       "Type": "Runtime",
       "LoadingPhase": "Default"
     }
