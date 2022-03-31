@@ -363,6 +363,9 @@ void FJSONLiveLinkSource::HandleReceivedData(TSharedPtr<TArray<uint8>, ESPMode::
 				UE_LOG(ModuleLog, Warning, TEXT("HandleReceiveData - TransformSubject"));
 				FLiveLinkStaticDataStruct StaticDataStruct = FLiveLinkStaticDataStruct(FLiveLinkTransformStaticData::StaticStruct());
 
+				FLiveLinkTransformStaticData& TransformData = *StaticDataStruct.Cast<FLiveLinkTransformStaticData>();
+				TransformData.bIsScaleSupported = true;
+
 				Client->PushSubjectStaticData_AnyThread({ SourceGuid, SubjectName }, ULiveLinkTransformRole::StaticClass(), MoveTemp(StaticDataStruct));
 				EncounteredSubjects.Add(SubjectName);
 			}
